@@ -20,7 +20,7 @@ export default class Slide {
     this.dist.startX = event.clientX;
     this.wrapper.addEventListener('mousemove', this.onMove);
   }
-
+  
   onMove(event) {
     const finalPosition = this.updatePosition(event.clientX);
     this.moveSlide(finalPosition);
